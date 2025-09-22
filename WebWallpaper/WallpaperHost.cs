@@ -49,7 +49,7 @@ namespace WebToBG
 
         // ===== Wallpaper restoration P/Invoke =====
         [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
-        private static extern bool SystemParametersInfo(uint uiAction, uint uiParam, string pvParam, uint fWinIni);
+        private static extern bool SystemParametersInfo(uint uiAction, uint uiParam, string? pvParam, uint fWinIni);
         
         [DllImport("user32.dll", SetLastError = true)]
         private static extern bool InvalidateRect(IntPtr hWnd, IntPtr lpRect, bool bErase);
@@ -74,7 +74,7 @@ namespace WebToBG
                 System.Diagnostics.Debug.WriteLine("[WallpaperHost] Force refreshing desktop wallpaper...");
                 
                 // Force Windows to refresh the desktop wallpaper
-                SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, string.Empty, SPIF_UPDATEINIFILE | SPIF_SENDCHANGE);
+                SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, null, SPIF_UPDATEINIFILE | SPIF_SENDCHANGE);
                 
                 // Additional desktop refresh
                 var desktopWindow = GetDesktopWindow();
@@ -382,7 +382,7 @@ namespace WebToBG
                 
                 // Force Windows to refresh the desktop wallpaper
                 // This will restore the original wallpaper that was set before our app started
-                SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, string.Empty, SPIF_UPDATEINIFILE | SPIF_SENDCHANGE);
+                SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, null, SPIF_UPDATEINIFILE | SPIF_SENDCHANGE);
                 
                 // Additional desktop refresh
                 var desktopWindow = GetDesktopWindow();
