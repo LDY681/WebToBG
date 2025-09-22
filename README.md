@@ -29,9 +29,9 @@
 
 <p align="center">
   <g-emoji ios-version="6.0" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" alias="warning">⚠️</g-emoji>
-  Built on <a href="https://dotnet.microsoft.com/en-us/download/dotnet/9.0/runtime">.NET 9.0</a>
-  Requires <strong>Windows 7</strong> or later. See <a href="https://github.com/sindresorhus/Plash">Plash</a> if on MacOS.
-  <g-emoji ios-version="6.0" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" alias="warning">⚠️</g-emoji>
+  Requires <a href="https://dotnet.microsoft.com/en-us/download/dotnet/9.0/runtime">.NET 9.0 desktop runtime</a>
+  <g-emoji ios-version="6.0" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" alias="warning">⚠️</g-emoji><br>
+  Requires <strong>Windows 7</strong> or later. See <a href="https://github.com/sindresorhus/Plash">Plash</a> if on MacOS.  
 </p>
 
 <p align="center">
