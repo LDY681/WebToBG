@@ -1,0 +1,10 @@
+﻿<Window x:Class="WebToBG.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WebToBG"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Black"
+        Loaded="Window_Loaded">
+    <Grid x:Name="Root"/>
+</Window>
